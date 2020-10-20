@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=B612:wght@400;700&display=swap');/*font-family: 'B612', sans-serif;*/
+/*@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap'); /*font-family: 'Luckiest Guy', cursive;*/
+
+*{
+  margin: 0;
+  padding: 0;
+
+}
+
+html {
+    text-align: center;
+    margin: 0;
+    padding: 0;     
+    background: url("background.jpg");
+    background-color: gray;
+    background-size: cover;
+  }
+
+  body {
+    margin: 0;
+    display: flex;
+    flex: 1;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-flow: column;
+    font-family: 'B612', sans-serif;
+    
+  }
+
+  footer {
+    position: relative;
+    top: 12vh;
+    font-size: 1.5vh;
+    
+  }
+
+  a {
+    color: rgb(28, 28, 28);
+    text-decoration: none;
+  }
+
+
+  button {
+    font-size: 2vh;
+    background: rgba(0, 0, 0, 0.78);
+    color: white;
+    border: none;
+    height: 4vh;
+
+  }
+
+  button:hover{
+    background-color: rgba(100, 100, 100, 0.78);
+  }
+
+  kbd {
+    background-color: #eee;
+    border-radius: 3px;
+    border: 1px solid #b4b4b4;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .2), 0 2px 0 0 rgba(255, 255, 255, .7) inset;
+    color: #333;
+    display: inline-block;
+    font-size: 1em;
+    font-weight: 700;
+    line-height: 1;
+    padding: 2px 4px;
+    white-space: nowrap;
+    text-shadow: none;
+   }
+
+   p {
+     margin-top: 3vh;
+     color: white;
+     text-shadow: 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black; /*Para hacer una especie de outline en el texto*/
+   }
+
+  .grid {
+    padding: 1vh;
+    display: grid;
+    width: 50vh;
+    margin: 0 auto;
+    font-size: 4vh;
+    grid-template-columns: auto 8vh 8vh 8vh 8vh auto;
+    grid-template-areas: 'score score score score score score' '. clear erase . divide .' 
+    '. seven eight nine multi .' '. four five six subst .' ' . one two three adding .' '. . zer point equal .';
+    background: rgba(20, 20, 20, 1);
+    gap: 2px;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);  
+    font-family: Verdana, Geneva, Tahoma, sans-serif;  
+  }
+
+ 
+  .score{
+    display: flex;
+    flex-direction: column;
+    grid-area: score;
+    margin: 0 auto;
+    padding: 0;
+    margin-bottom: 20vh;
+  }
+
+  .screen {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding: 0;
+    margin: 0;
+    height: 6vh;
+    width: 50vh;
+    color: gray;
+    font-size: 2vh;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+
+  .screen2 {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding: 0;
+    margin: 0;
+    height: 6vh;
+    width: 50vh;
+    color: white;
+    font-size: 3.7vh;
+    overflow: visible;  
+  }
+
+  .one {
+    grid-area: one;
+  }
+
+  .two {
+    grid-area: two;
+  }
+
+  .three {
+    grid-area: three;
+  }
+
+  .four {
+    grid-area: four;
+  }
+
+  .five {
+    grid-area: five;
+  }
+
+  .six {
+    grid-area: six;
+  }
+
+  .seven {
+    grid-area: seven;
+  }
+
+  .eight {
+    grid-area: eight;
+  }
+
+  .nine {
+    grid-area: nine;
+  }
+
+  .zero {
+    grid-area: zer;
+  }
+
+  .clear {
+    grid-area: clear;
+  }
+
+  .divide {
+    grid-area: divide;
+  }
+
+  .multi{
+    grid-area: multi;
+  }
+
+  .subst {
+    grid-area: subst;
+  }
+
+  .add {
+    grid-area: adding;
+  }
+
+  .equal {
+    grid-area: equal;
+    background: rgba(32, 32, 32, 0.78);
+  }
+
+  .point {
+    grid-area: point;
+    
+  }
+
+  .erase{
+    grid-area: erase;
+  }
+
+  h1 {
+    color: rgb(46, 46, 46);
+    font-size: 7vh;
+  }
