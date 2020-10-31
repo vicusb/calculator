@@ -11,7 +11,7 @@ html {
     text-align: center;
     margin: 0;
     padding: 0;     
-    background: url("background.jpg");
+    background: url("background.png");
     background-color: gray;
     background-size: cover;
   }
@@ -29,12 +29,17 @@ html {
     
   }
 
-  footer {
-    position: relative;
-    top: 12vh;
-    font-size: 1.5vh;
-    
-  }
+  #signature {
+    display: block;
+    position: absolute;
+    bottom: 0px;
+    color:white;
+    text-align: end;
+    font-family: 'Courier New', Courier, monospace;
+    cursor: pointer;
+}
+
+ 
 
   a {
     color: rgb(28, 28, 28);
